@@ -2,6 +2,9 @@
 @import 'agenda';
 @import 'leaflet';
 
+@include font-face('ModernistLight', '../fonts/sk-modernist-light-webfont');
+@include font-face('ModernistBold',  '../fonts/sk-modernist-bold-webfont');
+
 $bg-color:       #FFF;
 $text-color:     #000;
 $accent:         #E94343;
@@ -25,10 +28,14 @@ body, h1, h2, h3, nav ul, ul.actions {
   padding: 0;
 }
 
+h1, h2 {
+  font-family: 'ModernistBold';
+}
+
 body {
   background: $bg-color;
   color: $text-color;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'ModernistLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
